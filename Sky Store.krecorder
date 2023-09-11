@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Sky Store</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Add/Remove to my List</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/<datalist><option>https://stv.prd.sky.ch/store/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/fiction/114007/<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option><option>https://stv.prd.sky.ch/store/fiction/114007/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='__layout']/div/main/div/div/div[2]/div/div[2]/div/button[4]/span<datalist><option>xpath=//div[@id='__layout']/div/main/div/div/div[2]/div/div[2]/div/button[4]/span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][7]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][7]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fantasy'])[1]/preceding::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Meg 2: The Trench'])[1]/preceding::*[name()='svg'][3]</option><option>css=svg.icon.inner-icon.icon-left.Chevron-left.icon-only</option></datalist></td><td></td></tr>
+<tr><td>goBack</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-store-my-list<datalist><option>id=sidebar-store-my-list</option><option>xpath=//a[@id='sidebar-store-my-list']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li[5]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='MOVIES'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SERIES'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='MY VIDEOS'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/store/my-list')]</option><option>xpath=//li[5]/a</option><option>css=#sidebar-store-my-list</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">My library</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/library<datalist><option>https://stv.prd.sky.ch/store/library</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][6]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fantasy'])[1]/preceding::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('', "'", '', "'", 'Hot from Cinema', "'", '', "'", ' - Premium Rental now')])[1]/preceding::*[name()='svg'][4]</option><option>css=svg.icon.Video-library</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='__layout']/div/nav<datalist><option>xpath=//div[@id='__layout']/div/nav</option><option>xpath=//nav</option><option>css=nav.sidebar.sidebar-mini</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=__nuxt<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/player?content=114007&type=MOVIE<datalist><option>https://stv.prd.sky.ch/store/player?content=114007&type=MOVIE</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=__nuxt<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
