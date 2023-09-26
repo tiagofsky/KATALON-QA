@@ -8,7 +8,33 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags=""> Live TV</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="">Side Menu Verification Show</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/<datalist><option>https://cms.demo.katalon.com/</option><option>https://stv.prd.sky.ch/show/</option><option>https://stv.prd.sky.ch/store/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-store-home<datalist><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option><option>id=sidebar-store-home</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-home<datalist><option>id=sidebar-show-home</option><option>id=sidebar-store-home</option></datalist></td><td>home</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-home<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option><option>test</option><option>${home}</option><option>"${home}"</option><option>{home}</option><option>id=sidebar-store-home</option></datalist></td><td>Icon/Home</td></tr>
+<tr><td>click</td><td>id=sidebar-store-search<datalist><option>id=sidebar-show-search</option><option>xpath=//a[@id='sidebar-show-search']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li[2]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SERIES'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/search')]</option><option>xpath=//li[2]/a</option><option>css=#sidebar-show-search</option><option>id=sidebar-show-search</option><option>id=sidebar-store-search</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-search<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>id=sidebar-show-search</option><option>id=sidebar-store-search</option></datalist></td><td>search</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-search<datalist><option>id=sidebar-show-home</option><option>xpath=//a[@id='sidebar-show-home']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/')]</option><option>xpath=//li/a</option><option>css=#sidebar-show-home</option><option>id=sidebar-show-home</option><option>id=sidebar-show-search</option><option>id=sidebar-store-search</option></datalist></td><td>Icon/Search</td></tr>
+<tr><td>click</td><td>id=sidebar-store-series<datalist><option>xpath=//a[@id='sidebar-show-series']/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='MOVIES'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='LIVE TV'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='SERIES']/parent::*</option><option>xpath=//li[3]/a/div</option><option>css=#sidebar-show-series > div.label</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-store-series</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-series<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[2]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-store-series</option></datalist></td><td>series</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-series<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-store-series</option></datalist></td><td>Icon/Season</td></tr>
+<tr><td>click</td><td>id=sidebar-store-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-store-movie</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[3]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-store-movie</option></datalist></td><td>movies</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[4]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-store-movie</option></datalist></td><td>Icon/Movie</td></tr>
+<tr><td>click</td><td>id=sidebar-store-my-list<datalist><option>https://stv.prd.sky.ch/show/series</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-store-my-list</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-my-list<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thriller'])[1]/preceding::*[name()='svg'][6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Action'])[1]/preceding::*[name()='svg'][8]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-store-my-list</option></datalist></td><td>more</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-my-list<datalist><option>https://stv.prd.sky.ch/show/live-tv/</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-store-my-list</option></datalist></td><td>Icon/More</td></tr>
+<tr><td>click</td><td>id=sidebar-store-library<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>live-tv</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>id=sidebar-store-live</option><option>id=sidebar-store-library</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-store-library<datalist><option>https://stv.prd.sky.ch/show/search</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>id=sidebar-store-live</option><option>id=sidebar-store-live</option><option>id=sidebar-store-library</option></datalist></td><td>library</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-store-library<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>id=sidebar-store-live</option><option>id=sidebar-store-library</option></datalist></td><td>Icon/Video-library</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction"> Live TV</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist><option>https://stv.prd.sky.ch/show/</option></datalist></td><td></td></tr>
@@ -19,7 +45,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Browse Channels Live Tv</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">Browse Channels Live Tv</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist><option>https://stv.prd.sky.ch/show/</option></datalist></td><td></td></tr>
@@ -33,7 +59,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Research and Start Content</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">Research and Start Content</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist><option>https://stv.prd.sky.ch/show/</option></datalist></td><td></td></tr>
@@ -44,6 +70,7 @@
 <tr><td>click</td><td>id=keyboard-key-o<datalist><option>id=keyboard-key-o</option><option>xpath=//div[@id='keyboard-key-o']</option><option>xpath=//div[@id='__layout']/div/main/div/div/div/div[3]/div[2]/div[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='n'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='m'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='p'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='q'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='o']/parent::*</option><option>xpath=//div[2]/div[3]</option><option>css=#keyboard-key-o</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=keyboard-key-k<datalist><option>id=keyboard-key-k</option><option>xpath=//div[@id='keyboard-key-k']</option><option>xpath=//div[@id='__layout']/div/main/div/div/div/div[3]/div/div[11]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='j'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='i'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='l'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='m'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='k']/parent::*</option><option>xpath=//div[11]</option><option>css=#keyboard-key-k</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=__nuxt<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option></datalist></td><td></td></tr>
+<tr><td>captureEntirePageScreenshot</td><td><datalist></datalist></td><td></td></tr>
 <tr><td>open</td><td>https://stv.prd.sky.ch/show/fiction/86373/<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Subtitles:'])[1]/following::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Audio:'])[1]/following::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::*[name()='svg'][20]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::*[name()='svg'][20]</option><option>css=svg.icon.Play-3</option><option>https://stv.prd.sky.ch/show/fiction/86373/</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//div[@id='__layout']/div/main/div<datalist><option>xpath=//div[@id='__layout']/div/main/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::div[3]</option><option>xpath=//main/div</option><option>css=div.show-pages</option></datalist></td><td></td></tr>
@@ -52,11 +79,11 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Add/Remove to my List copy </td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">Add/Remove to my List copy </td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist></datalist></td><td></td></tr>
-<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=sidebar-show-search<datalist><option>id=sidebar-show-search</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=__nuxt<datalist></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//button[@class="tile fiction-poster default-elem-carousel-my-list"]<datalist><option>xpath=//button[@class="tile fiction-poster default-elem-carousel-my-list"]</option></datalist></td><td></td></tr>
@@ -69,6 +96,27 @@
 <tr><td>click</td><td>xpath=//button[@class="icon inner-icon icon-left More"]<datalist><option>xpath=//div[@id='__layout']/div/main/div/div/div[2]/div/div[2]/div/button[4]/span</option><option>xpath=//button[@class="icon inner-icon icon-left More"]</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][7]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][7]</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=sidebar-show-my-list<datalist><option>id=sidebar-show-my-list</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Movies Categories Show</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-show-movie<datalist></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-0']<datalist></datalist></td><td>action</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-0']<datalist></datalist></td><td>Action</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-1']<datalist></datalist></td><td>comedy</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-1']<datalist></datalist></td><td>Comedy</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-2']<datalist></datalist></td><td>family</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-2']<datalist></datalist></td><td>Family</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-3']<datalist></datalist></td><td>horror</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-3']<datalist></datalist></td><td>Horror</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-4']<datalist></datalist></td><td>doc</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-4']<datalist></datalist></td><td>Documentary</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-5']<datalist><option>xpath=//button[@id='group-0-5']</option></datalist></td><td>fantasy</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-5']<datalist><option>xpath=//button[@id='group-0-4']</option><option>xpath=//button[@id='group-0-5']</option></datalist></td><td>Fantasy</td></tr>
 </tbody></table>
 </body>
 </html>

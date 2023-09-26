@@ -8,7 +8,33 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Add/Remove to my List</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="">Side Menu Verification Store</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/show/<datalist><option>https://cms.demo.katalon.com/</option><option>https://stv.prd.sky.ch/show/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-show-home<datalist><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-home<datalist><option>id=sidebar-show-home</option></datalist></td><td>home</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-home<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option><option>test</option><option>${home}</option><option>"${home}"</option><option>{home}</option></datalist></td><td>Icon/Home</td></tr>
+<tr><td>click</td><td>id=sidebar-show-search<datalist><option>id=sidebar-show-search</option><option>xpath=//a[@id='sidebar-show-search']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li[2]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SERIES'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/search')]</option><option>xpath=//li[2]/a</option><option>css=#sidebar-show-search</option><option>id=sidebar-show-search</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-search<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>id=sidebar-show-search</option></datalist></td><td>search</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-search<datalist><option>id=sidebar-show-home</option><option>xpath=//a[@id='sidebar-show-home']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/')]</option><option>xpath=//li/a</option><option>css=#sidebar-show-home</option><option>id=sidebar-show-home</option><option>id=sidebar-show-search</option></datalist></td><td>Icon/Search</td></tr>
+<tr><td>click</td><td>id=sidebar-show-series<datalist><option>xpath=//a[@id='sidebar-show-series']/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='MOVIES'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='LIVE TV'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='SERIES']/parent::*</option><option>xpath=//li[3]/a/div</option><option>css=#sidebar-show-series > div.label</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-series<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[2]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option></datalist></td><td>series</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-series<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option></datalist></td><td>Icon/Season</td></tr>
+<tr><td>click</td><td>id=sidebar-show-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[3]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option></datalist></td><td>movies</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-movie<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[4]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option></datalist></td><td>Icon/Movie</td></tr>
+<tr><td>click</td><td>id=sidebar-show-live<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>live-tv</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-live<datalist><option>https://stv.prd.sky.ch/show/search</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option></datalist></td><td>live</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-live<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option></datalist></td><td>Icon/Live</td></tr>
+<tr><td>click</td><td>id=sidebar-show-my-list<datalist><option>https://stv.prd.sky.ch/show/series</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-show-my-list<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thriller'])[1]/preceding::*[name()='svg'][6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Action'])[1]/preceding::*[name()='svg'][8]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option></datalist></td><td>more</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-show-my-list<datalist><option>https://stv.prd.sky.ch/show/live-tv/</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option></datalist></td><td>Icon/More</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">Add/Remove to my List</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/store/<datalist><option>https://stv.prd.sky.ch/store/</option></datalist></td><td></td></tr>
@@ -23,7 +49,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">My library</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">My library</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/store/library<datalist><option>https://stv.prd.sky.ch/store/library</option></datalist></td><td></td></tr>
@@ -37,11 +63,11 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Buy Film</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Fiction">Buy Film</td></tr>
 </thead>
 <tbody>
 <tr><td>#</td><td>Precondition be logged in portail pprd 1571427@sky.ch<datalist><option>Precondition be logged in portail pprd 1571427@sky.ch</option></datalist></td><td></td></tr>
-<tr><td>open</td><td>https://stv.pprd.sky.ch/store/<datalist><option>https://stv.pprd.sky.ch/store/</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://stv.pprd.sky.ch/store/<datalist><option>https://stv.pprd.sky.ch/store/</option><option>https://stv.prd.sky.ch/store/</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath= //div[@class='fiction-highlight-tile-image']<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option><option>xpath= //div[@class='fiction-highlight-tile-image']</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//div[@class='carousel']/button[@id='default-focus']<datalist><option>/div[@class='carousel']/button[@id='default-focus']</option><option>xpath=//div[@class='carousel']/button[@id='default-focus']</option></datalist></td><td></td></tr>
 <tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
@@ -53,12 +79,38 @@
 <tr><td>click</td><td>id=Field-numberInput<datalist><option>id=Field-numberInput</option><option>name=number</option><option>xpath=//input[@id='Field-numberInput']</option><option>xpath=//div[@id='card-panel']/div/div/form/div/div/div/div/div/div/div/input</option><option>xpath=//input</option><option>css=#Field-numberInput</option></datalist></td><td></td></tr>
 <tr><td>type</td><td>id=Field-numberInput<datalist><option>424242424242</option><option>id=Field-numberInput</option></datalist></td><td>4242424242424242</td></tr>
 <tr><td>click</td><td>id=Field-expiryInput<datalist><option>id=Field-expiryInput</option><option>name=expiry</option><option>xpath=//input[@id='Field-expiryInput']</option><option>xpath=//div[@id='card-panel']/div/div/form/div/div/div[2]/div/div/div/input</option><option>xpath=//div[2]/div/div/div/input</option><option>css=#Field-expiryInput</option></datalist></td><td></td></tr>
-<tr><td>type</td><td>id=Field-expiryInput<datalist><option>id=Field-expiryInput</option></datalist></td><td>0430</td></tr>
+<tr><td>type</td><td>id=Field-expiryInput<datalist><option>id=Field-expiryInput</option></datalist></td><td>0327</td></tr>
 <tr><td>click</td><td>id=Field-cvcInput<datalist><option>id=Field-cvcInput</option><option>name=cvc</option><option>xpath=//input[@id='Field-cvcInput']</option><option>xpath=//div[@id='card-panel']/div/div/form/div/div/div[3]/div/div/div/div/input</option><option>xpath=//div[3]/div/div/div/div/input</option><option>css=#Field-cvcInput</option></datalist></td><td></td></tr>
-<tr><td>type</td><td>id=Field-cvcInput<datalist><option>id=Field-cvcInput</option></datalist></td><td>123</td></tr>
+<tr><td>type</td><td>id=Field-cvcInput<datalist><option>id=Field-cvcInput</option></datalist></td><td>575</td></tr>
 <tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td></tr>
 <tr><td>clickAndWait</td><td>id=sky-payment-submit<datalist><option>id=sky-payment-submit</option><option>xpath=//button[@id='sky-payment-submit']</option><option>xpath=//div[@id='sky-payment']/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add a payment method'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Update your payment method'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add a card on PostFinance'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Phone number'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Confirm']/parent::*</option><option>xpath=//button</option><option>css=#sky-payment-submit</option></datalist></td><td></td></tr>
 <tr><td>pause</td><td>10000<datalist><option>10000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=check-cg<datalist><option>id=check-cg</option><option>name=checkbox</option><option>xpath=//input[@id='check-cg']</option><option>xpath=//div[@id='main-view']/section[2]/div/div/div/div/div[2]/input</option><option>xpath=//div/div/div/div[2]/input</option><option>css=#check-cg</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='main-view']/section[2]/div/div/div/div/button<datalist><option>xpath=//div[@id='main-view']/section[2]/div/div/div/div/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='terms and conditions'])[1]/following::button[1]</option><option>xpath=//button</option><option>css=button.main-btn.payment-btn</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Watch<datalist><option>link=Watch</option><option>xpath=//a[contains(text(),'Watch')]</option><option>xpath=//div[@id='main-view']/div[2]/div/div[3]/div[4]/div/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Comedy'])[3]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Barbie'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='from'])[1]/preceding::a[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Greta Gerwig'])[1]/preceding::a[3]</option><option>xpath=//*/text()[normalize-space(.)='Watch']/parent::*</option><option>xpath=//div[3]/div[4]/div/a</option><option>css=a.main-btn.watch-btn</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Movies Categories Store</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/store/<datalist><option>https://stv.prd.sky.ch/store/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-store-movie<datalist><option>id=sidebar-store-movie</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='__layout']/div/main/div/div/div[2]<datalist><option>xpath=//div[@id='__layout']/div/main/div/div/div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Comedy'])[2]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fantasy'])[2]/following::div[12]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Action'])[2]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Adventure'])[1]/preceding::div[4]</option><option>xpath=//main/div/div/div[2]</option><option>css=div.fiction-detail-fixed</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-0']<datalist></datalist></td><td>action</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-0']<datalist></datalist></td><td>Action</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-1']<datalist><option>xpath=//button[@id='group-0-1']</option></datalist></td><td>adventure</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-1']<datalist><option>xpath=//button[@id='group-0-1']</option></datalist></td><td>Adventure</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-2']<datalist></datalist></td><td>comedy</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-2']<datalist></datalist></td><td>Comedy</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-3']<datalist></datalist></td><td>doc</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-3']<datalist></datalist></td><td>Documentary</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-4']<datalist></datalist></td><td>drama</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-4']<datalist><option>xpath=//button[@id='group-0-4']</option></datalist></td><td>Drama</td></tr>
+<tr><td>storeText</td><td>xpath=//button[@id='group-0-5']<datalist><option>xpath=//button[@id='group-0-5']</option></datalist></td><td>family</td></tr>
+<tr><td>verifyText</td><td>xpath=//button[@id='group-0-5']<datalist><option>xpath=//button[@id='group-0-4']</option><option>xpath=//button[@id='group-0-5']</option></datalist></td><td>Family</td></tr>
 </tbody></table>
 </body>
 </html>

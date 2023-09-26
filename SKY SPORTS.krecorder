@@ -8,7 +8,33 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Live Tv</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="">Side Menu Verification Sport</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://stv.prd.sky.ch/sport/<datalist><option>https://cms.demo.katalon.com/</option><option>https://stv.prd.sky.ch/show/</option><option>https://stv.prd.sky.ch/sport/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=sidebar-sport-home<datalist><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option><option>id=sidebar-sport-home</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-home<datalist><option>id=sidebar-show-home</option><option>id=sidebar-sport-home</option></datalist></td><td>home</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-home<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-home']/div</option><option>id=sidebar-show-home</option><option>test</option><option>${home}</option><option>"${home}"</option><option>{home}</option><option>id=sidebar-sport-home</option></datalist></td><td>Icon/Home</td></tr>
+<tr><td>click</td><td>id=sidebar-sport-search<datalist><option>id=sidebar-show-search</option><option>xpath=//a[@id='sidebar-show-search']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li[2]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SERIES'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/search')]</option><option>xpath=//li[2]/a</option><option>css=#sidebar-show-search</option><option>id=sidebar-show-search</option><option>id=sidebar-sport-search</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-search<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>xpath=//main[@id='main']/div[2]/ul/li[1]/div/a[2]</option><option>id=sidebar-show-search</option><option>id=sidebar-sport-search</option></datalist></td><td>search</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-search<datalist><option>id=sidebar-show-home</option><option>xpath=//a[@id='sidebar-show-home']</option><option>xpath=//div[@id='__layout']/div/nav/div/div/div[2]/ul/li/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/show/')]</option><option>xpath=//li/a</option><option>css=#sidebar-show-home</option><option>id=sidebar-show-home</option><option>id=sidebar-show-search</option><option>id=sidebar-sport-search</option></datalist></td><td>Icon/Search</td></tr>
+<tr><td>click</td><td>id=sidebar-sport-schedule<datalist><option>xpath=//a[@id='sidebar-show-series']/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HOME'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='MOVIES'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='LIVE TV'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='SERIES']/parent::*</option><option>xpath=//li[3]/a/div</option><option>css=#sidebar-show-series > div.label</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-sport-search</option><option>id=sidebar-sport-calendar</option><option>id=sidebar-sport-schedule</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-schedule<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[2]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-sport-search</option><option>id=sidebar-sport-calendar</option><option>id=sidebar-sport-schedule</option></datalist></td><td>calendar</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-schedule<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[2]/div/a[3]</option><option>xpath=//a[@id='sidebar-show-series']/div</option><option>id=sidebar-show-series</option><option>id=sidebar-sport-search</option><option>id=sidebar-sport-calendar</option><option>id=sidebar-sport-schedule</option></datalist></td><td>Icon/Calendar</td></tr>
+<tr><td>click</td><td>id=sidebar-sport-sports<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-sport-sports</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-sports<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[3]/div/a[3]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-sport-sports</option></datalist></td><td>sports</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-sports<datalist><option>xpath=//main[@id='main']/div[2]/ul/li[4]/div/a[2]</option><option>id=sidebar-show-movies</option><option>id=sidebar-show-movie</option><option>id=sidebar-sport-sports</option></datalist></td><td>Icon/Sports</td></tr>
+<tr><td>click</td><td>id=sidebar-sport-highlights<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>live-tv</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>id=sidebar-show-star</option><option>id=sidebar-sport-highlights</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-highlights<datalist><option>https://stv.prd.sky.ch/show/search</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>id=sidebar-show-star</option><option>id=sidebar-sport-highlights</option></datalist></td><td>star</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-highlights<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::*[name()='svg'][5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='a'])[1]/preceding::*[name()='svg'][5]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-live-tv</option><option>id=sidebar-show-live</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][6]</option><option>id=sidebar-sport-highlights</option></datalist></td><td>Icon/Star</td></tr>
+<tr><td>click</td><td>id=sidebar-sport-live<datalist><option>https://stv.prd.sky.ch/show/series</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-sport-live-tv</option><option>id=sidebar-sport-live</option></datalist></td><td></td></tr>
+<tr><td>storeText</td><td>id=sidebar-sport-live<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='TIAGO'])[1]/following::*[name()='svg'][3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thriller'])[1]/preceding::*[name()='svg'][6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Action'])[1]/preceding::*[name()='svg'][8]</option><option>css=svg.icon.Season</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-sport-live-tv</option><option>id=sidebar-sport-live</option></datalist></td><td>live</td></tr>
+<tr><td>verifyText</td><td>id=sidebar-sport-live<datalist><option>https://stv.prd.sky.ch/show/live-tv/</option><option>id=sidebar-show-more</option><option>id=sidebar-show-my-list</option><option>id=sidebar-sport-live-tv</option><option>id=sidebar-sport-live</option></datalist></td><td>Icon/Live</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="Sports">Live Tv</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/sport/<datalist><option>https://stv.prd.sky.ch/</option><option>https://stv.prd.sky.ch/</option><option>https://stv.prd.sky.ch/sport/</option></datalist></td><td></td></tr>
@@ -18,7 +44,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Browse Channels Live Tv</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Sports">Browse Channels Live Tv</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/sport/<datalist><option>https://stv.prd.sky.ch/show/</option><option>https://stv.prd.sky.ch/sport/</option></datalist></td><td></td></tr>
@@ -31,7 +57,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Add Team to Favourites / Research </td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Sports">Add Team to Favourites / Research </td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/fr/sport/<datalist><option>https://stv.prd.sky.ch/fr/sport/</option><option>https://stv.prd.sky.ch/fr/sport/</option></datalist></td><td></td></tr>
@@ -44,6 +70,7 @@
 <tr><td>click</td><td>id=keyboard-key-o<datalist><option>id=keyboard-key-o</option><option>xpath=//div[@id='keyboard-key-o']</option><option>xpath=//div[@id='__layout']/div/main/div/div/div/div[3]/div[2]/div[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='n'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='m'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='p'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='q'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='o']/parent::*</option><option>xpath=//div[2]/div[3]</option><option>css=#keyboard-key-o</option><option>id=keyboard-key-o</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=keyboard-key-r<datalist><option>id=keyboard-key-r</option><option>xpath=//div[@id='keyboard-key-r']</option><option>xpath=//div[@id='__layout']/div/main/div/div/div/div[3]/div[2]/div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='q'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='p'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='s'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='t'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='r']/parent::*</option><option>xpath=//div[2]/div[6]</option><option>css=#keyboard-key-r</option><option>id=keyboard-key-r</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=keyboard-key-t<datalist><option>id=keyboard-key-t</option><option>xpath=//div[@id='keyboard-key-t']</option><option>xpath=//div[@id='__layout']/div/main/div/div/div/div[3]/div[2]/div[8]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='s'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='r'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='u'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='v'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='t']/parent::*</option><option>xpath=//div[2]/div[8]</option><option>css=#keyboard-key-t</option><option>id=keyboard-key-t</option></datalist></td><td></td></tr>
+<tr><td>captureEntirePageScreenshot</td><td><datalist></datalist></td><td></td></tr>
 <tr><td>click</td><td>id=__nuxt<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option></datalist></td><td></td></tr>
 <tr><td>open</td><td>https://stv.prd.sky.ch/fr/sport/competitor/437/<datalist><option>https://stv.prd.sky.ch/fr/sport/competitor/437/</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//img[@class="avatar"]<datalist><option>id=__nuxt</option><option>xpath=//div[@id='__nuxt']</option><option>xpath=//div[2]</option><option>css=#__nuxt</option><option>xpath=//img[@class="avatar"]</option></datalist></td><td></td></tr>
@@ -55,7 +82,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Check Calendar</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Sports">Check Calendar</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://stv.prd.sky.ch/sport/<datalist><option>https://stv.prd.sky.ch/sport/</option></datalist></td><td></td></tr>
