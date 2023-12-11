@@ -19,7 +19,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Easy Login</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Profiles">Easy Login</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>${GlobalVariable.env}login/classic<datalist><option>https://stv.prd.sky.ch/login/classic</option><option>https://stv.${pprd}.sky.ch/login/classic</option><option>login/classic</option><option>${urlpreprod}login/classic</option><option>${GlobalVariable.preprod}login/classic</option><option>${GlobalVariable.env}login/classic</option></datalist></td><td></td></tr>
@@ -80,7 +80,6 @@
 <tr><td rowspan="1" colspan="3" data-tags="Profiles">Log in Email/Pass</td></tr>
 </thead>
 <tbody>
-<tr><td>storeEval</td><td>"${GlobalVariable.env}"=="https://stv.prd.sky.ch/"<datalist><option>"${GlobalVariable.env}"=="https://stv.prd.sky.ch/"</option><option>"${GlobalVariable.env}"=="https://stv.pprd.sky.ch/"</option></datalist></td><td>isProd</td></tr>
 <tr><td>open</td><td>https://stv.pprd.sky.ch/login/classic<datalist><option>${GlobalVariable.env}login/classic</option><option>https://stv.prd.sky.ch/login/classic</option><option>https://stv.DEV.sky.ch/login/classic</option><option>https://stv.prod.sky.ch/login/classic</option><option>https://stv.dev.sky.ch/login/classic</option><option>${GlobalVariable.env}</option><option>login/classic</option><option>https://stv.pprd.sky.ch/login/classic</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//div[@data-selectable-id="email-field"]/div<datalist><option>xpath=//div[@data-selectable-id="email-field"]/div</option><option>xpath=//div[@data-selectable-id="email-field"]</option><option>xpath=//div[@data-selectable-id="email-field"]/span</option><option>data-selectable-id="email-field"</option><option>xpath=//*[@data-container-id="email-field"]</option><option>xpath=//div[@data-container-id="email-field"]</option><option>xpath=//[@data-selectable-id="email-field"]</option><option>xpath=//p[@class='marquee keyboard-input-text']</option><option>xpath=//p[@data-selectable-id="email-field"]</option><option>id="email"</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>xpath=//div[@data-selectable-id="key-1"]<datalist><option>xpath=//div[@data-selectable-id="key-1"]</option><option>data-selectable-id="key-t"</option><option>xpath=//div[@data-selectable-id="key-t"]</option></datalist></td><td></td></tr>
@@ -130,7 +129,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Preferred Language</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Profiles">Preferred Language</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>${GlobalVariable.env}profiles<datalist><option>https://stv.prd.sky.ch/profiles</option><option>${GlobalVariable.env}profiles</option></datalist></td><td></td></tr>
@@ -161,7 +160,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Preferred Universe</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Profiles">Preferred Universe</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>${GlobalVariable.env}profiles<datalist><option>https://stv.prd.sky.ch/profiles</option><option>${GlobalVariable.env}profiles</option></datalist></td><td></td></tr>
@@ -202,7 +201,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3" data-tags="">Universe Page</td></tr>
+<tr><td rowspan="1" colspan="3" data-tags="Profiles">Universe Page</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>${GlobalVariable.env}en/universe<datalist><option>${GlobalVariable.env}en/universe</option><option>${GlobalVariable.env}login/classic</option><option>https://stv.prd.sky.ch/login/classic</option><option>https://stv.${pprd}.sky.ch/login/classic</option><option>login/classic</option><option>${urlpreprod}login/classic</option><option>${GlobalVariable.preprod}login/classic</option><option>${GlobalVariable.env}universe</option></datalist></td><td></td></tr>
@@ -230,6 +229,23 @@
 <tr><td>verifyText</td><td>xpath=//*[@data-selectable-id="go-to-store"]<datalist><option>verifyText</option><option>xpath=//*[@data-selectable-id="go-to-sport"]</option><option>xpath=//*[@data-selectable-id="go-to-store"]</option></datalist></td><td>Aller sur Sky Store</td></tr>
 <tr><td>verifyVisible</td><td>xpath=//*[@data-selectable-id="go-to-sport"]<datalist><option>xpath=//*[@data-selectable-id="go-to-sport"]</option><option>xpath=//*[@data-selectable-id="go-to-store"]</option><option>xpath=//*[@data-selectable-id="go-to-show"]</option></datalist></td><td></td></tr>
 <tr><td>verifyText</td><td>xpath=//*[@data-selectable-id="go-to-sport"]<datalist><option>xpath=//*[@data-selectable-id="go-to-sport"]</option><option>xpath=//*[@data-selectable-id="go-to-show"]</option><option>xpath=//button[@data-selectable-id="group-poster-sh-page-mov-genre-fantasy"]</option><option>xpath=//button[@data-selectable-id="group-poster-sh-page-ser-genre-drama"]</option></datalist></td><td>Aller sur Sky Sport</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="Profiles">Contacts/Bugs</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>${GlobalVariable.env}help<datalist><option>${GlobalVariable.env}</option><option>${GlobalVariable.env}profiles</option><option>https://stv.prd.sky.ch/profiles</option><option>${GlobalVariable.env}help</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@data-selectable-id="contact-us"]<datalist><option>data-tab-switcher-help="contactUs"</option><option>data-selectable-id="contactUs"</option><option>xpath=//*[@data-selectable-id="contactUs"]</option><option>data-selectable-id="contact-us"</option><option>xpath=//*[@data-selectable-id="contact-us"]</option></datalist></td><td></td></tr>
+<tr><td>verifyText</td><td>xpath=//data-container-id="faq"/*[@class="qr-code-link"]/p<datalist><option>xpath=//p[@class="qr-code-link"]</option><option>xpath=//data-container-id="faq"/*[@class="qr-code-link"]/p</option></datalist></td><td>https://support.sky.ch</td></tr>
+<tr><td>verifyText</td><td>xpath=//*[@data-container-id="live-chat"]/*[@class="qr-code-detail sky"]/p<datalist><option>xpath=//p</option><option>xpath=//*[@data-container-id="live-chat"]/p</option><option>xpath=//*[@data-container-id="live-chat"]/class="qr-code-detail sky"/p</option><option>xpath=//*[@data-container-id="live-chat"]/*[@class="qr-code-detail sky"]/p</option></datalist></td><td>https://chat.guuru.com/sky?locale=en</td></tr>
+<tr><td>verifyText</td><td>xpath=//*[@data-container-id="customer-service"]/*[@class="qr-code-detail sky"]/p<datalist><option>xpath=//*[@data-container-id="customer-service"]/*[@class="qr-code-detail sky"]/p</option></datalist></td><td>https://support.sky.ch/hc/en-us/requests/new</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//*[@data-selectable-id="bugs-and-feedbacks"]<datalist><option>xpath=//*[@data-selectable-id="contact-us"]</option><option>data-tab-switcher-help="contactUs"</option><option>data-selectable-id="contactUs"</option><option>xpath=//*[@data-selectable-id="contactUs"]</option><option>data-selectable-id="contact-us"</option><option>xpath=//*[@data-selectable-id="bugs-and-feedbacks"]</option></datalist></td><td></td></tr>
+<tr><td>verifyText</td><td>xpath=//*[@data-container-id="raise-a-bug"]/*[@class="qr-code-detail sky"]/p<datalist><option>xpath=//*[@data-container-id="customer-service"]/*[@class="qr-code-detail sky"]/p</option><option>xpath=//*[@data-container-id="raise-a-bug"]/*[@class="qr-code-detail sky"]/p</option></datalist></td><td>https://www.sky.ch/en/sky-feedback</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td></tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
